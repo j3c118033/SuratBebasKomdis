@@ -1,0 +1,9 @@
+__ci_last_regenerate|i:1618843690;_ci_previous_url|s:22:"http://localhost:8080/";identity|s:18:"201811198211141001";username|s:18:"201811198211141001";email|s:28:"201811198211141001@gmail.com";user_id|s:1:"2";old_last_login|s:10:"1618783869";last_check|i:1618843689;message|s:335:"<!-- DEBUG-VIEW START 1 ROOTPATH/vendor\composer/../benedmunds/codeigniter-ion-auth/Views/Messages/list.php -->
+	<div class="alert alert-danger" role="alert">
+		<ul>
+					<li>Login berhasil!</li>
+				</ul>
+	</div>
+
+<!-- DEBUG-VIEW ENDED 1 ROOTPATH/vendor\composer/../benedmunds/codeigniter-ion-auth/Views/Messages/list.php -->
+";__ci_vars|a:1:{s:7:"message";s:3:"old";}

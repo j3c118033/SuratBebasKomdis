@@ -1,0 +1,220 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	width: 100%;
+	background-size: cover;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-family: "Open Sans", sans-serif;
+	background: url(../assets/images/background/background.jpg);
+} 
+
+.hero {
+	width: 100%;
+	height: 100vh;
+	background-size: cover;
+}
+  
+.hero:before {
+	content: "";
+	background: rgba(0, 0, 0, 0.4);
+	position: absolute;
+	bottom: 0;
+	top: 0;
+	left: 0;
+	right: 0;
+	background-size : cover;
+}
+  
+/*Login Box */
+.container{
+	position: relative;
+	width: 400px;
+	background: white;
+	padding: 30px 20px;
+	margin-top:60px;
+	margin-bottom: 30px;
+	border-radius: 30px;
+}
+
+img{
+	width: 100%;
+	margin-bottom: 40px;
+	font-family: 'montserrat', sans-serif;
+	color: black;
+}
+
+.input-field, form .button{
+	margin-top: 0;
+	margin-bottom: 5px;
+	position: relative;
+	height: 50px;
+	width: 100%;
+	border-radius: 10px;
+}
+
+.label-field label b{
+	color: #707070;
+	font-size: 12pt;
+	text-align: right;
+	padding-top: 15px;
+	margin-bottom: 10px;
+}
+
+.input-field input{
+	height: 100%;
+	width: 100%;
+	border: 1px solid gray;
+	padding-left: 15px;
+	font-size: 14px;
+	outline: none;
+	transition: .4s;
+	border-radius: 10px ;
+}
+
+input:focus{
+	border: 1px solid #2a1574;
+}
+
+.input-field label, span.show{
+	position: absolute;
+	top: 90%;
+	transform: translateY(-50%);
+}
+
+.input-field label{
+	left: 15px;
+	pointer-events: none;
+	color: #707070;
+	font-size: 14px;
+	transition: .4s;
+}
+
+span.show{
+	right: 20px;
+	color: black;
+	font-size: 14px;
+	font-weight: bold;
+	cursor: pointer;
+	user-select: none;
+	visibility: hidden;
+	font-family: 'Roboto',sans-serif;
+}
+
+.input:valid~span.show{
+	visibility: visible;
+}
+
+input:focus~label,
+input:valid~label {
+	transform: translateY(-33px);
+	background: white;
+	font-size: 16px;
+	color: #1DA1F2;
+}
+
+form .button{
+	margin-top: 30px;
+	overflow: hidden;
+	z-index: 111;
+}
+
+.button .iner{
+	position: absolute;
+	height: 100%;
+	width: 300%;
+	left: 100%;
+	z-index: -1;
+	transition: all .4s;
+	background: #2A1574;
+}
+
+.button:hover .iner{
+	left: 0;
+}
+
+.button button{
+	width: 100%;
+	height: 100%;
+	border: none;
+	background: none;
+	outline: none;
+	color: black;
+	cursor: pointer;
+	font-size: 20px;
+	font-family: 'Montserrat',sans-serif;
+}
+
+.button:hover button{
+	color: white;
+}
+
+.container .auth{
+	margin: 0 0 20px 0;
+	color: #707070;
+	font-size: 15px;
+}
+
+.links{
+	display: flex;
+	cursor: pointer;
+}
+
+.facebook, .google{
+	height: 40px;
+	width: 100%;
+	border-radius: 3px;
+	border: 1px solid silver;
+	margin : 0 10px;
+	transition: .4s;
+}
+
+.facebook:hover{
+	border: 1px solid #4267b2;
+}
+
+.google:hover{
+	border: 1px solid #dd4b39;
+}
+
+.facebook i, .facebook span{
+	color: #4267b2;
+}
+
+.google i, .google span{
+	color: #dd4b39;
+}
+
+.links i{
+	font-size: 23px;
+	line-height: 40px;
+	margin-left: -90px;
+}
+
+.links span{
+	position: absolute;
+	font-size: 17px;
+	font-weight: bold;
+	padding-left: 8px;
+	font-family: 'Roboto',sans-serif;
+}
+
+.signup{
+	margin-top: 50px;
+	font-family: 'Roboto',sans-serif;
+	color: black;
+	font-weight: normal;
+}
+
+.signup a{
+	color: #3498db;
+	text-decoration: none;
+}
+
+.signup a:hover{
+	text-decoration: none;
+}
